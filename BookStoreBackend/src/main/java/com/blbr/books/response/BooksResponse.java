@@ -2,12 +2,21 @@ package com.blbr.books.response;
 
 import java.util.List;
 
+import com.blbr.books.model.BooksModel;
+
 public class BooksResponse {
 
 	private int statuscode;
-	private String object;
+	private BooksModel object;
 	private String message;
 	private List list;
+
+	public BooksResponse(int statuscode, BooksModel object, String message) {
+		super();
+		this.statuscode = statuscode;
+		this.object = object;
+		this.message = message;  
+	}
 
 	public int getStatuscode() {
 		return statuscode;
@@ -17,11 +26,11 @@ public class BooksResponse {
 		this.statuscode = statuscode;
 	}
 
-	public String getObject() {
+	public BooksModel getObject() {
 		return object;
 	}
 
-	public void setObject(String object) {
+	public void setObject(BooksModel object) {
 		this.object = object;
 	}
 
