@@ -1,4 +1,4 @@
-package com.blbr.books.Model;
+package com.blbr.books.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,6 +20,8 @@ public class BooksModel {
 	private boolean isCart;
 	private boolean isWishlist;
 	private long count;
+	private String details;
+	private long code;
 
 	public Long getBooksId() {
 		return booksId;
@@ -75,5 +77,21 @@ public class BooksModel {
 
 	public void setCount(long count) {
 		this.count = count;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
+
+	public long getCode() {
+		return code;
+	}
+
+	public void setCode(long code) {
+		this.code = code;
 	}
 }

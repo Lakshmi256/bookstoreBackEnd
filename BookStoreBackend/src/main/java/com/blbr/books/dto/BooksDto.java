@@ -7,6 +7,8 @@ public class BooksDto {
 	private boolean isCart;
 	private boolean isWishlist;
 	private long count;
+	private String details;
+	private long code;
 
 	public String getName() {
 		return name;
@@ -54,6 +56,22 @@ public class BooksDto {
 
 	public void setCount(long count) {
 		this.count = count;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
+
+	public long getCode() {
+		return code;
+	}
+
+	public void setCode(long code) {
+		this.code = code;
 	}
 
 }
